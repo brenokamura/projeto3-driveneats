@@ -14,7 +14,7 @@ function chooseBeef(){
     document.getElementById("beef").style.borderColor = "green";
     document.getElementById("chicken").style.borderColor = "white";
     document.getElementById("feijoada").style.borderColor = "white";
-    plate = "Carne";
+    plate = "Filé com Fritas";
     habilitarBotao()
  }
 
@@ -81,7 +81,7 @@ function habilitarBotao(){
 function finalizeOrder(){
     if ((document.getElementById("chicken").style.borderColor == "green" ||  document.getElementById("beef").style.borderColor == "green" ||document.getElementById("feijoada").style.borderColor == "green") && (document.getElementById("coca").style.borderColor == "green" ||  document.getElementById("juice").style.borderColor == "green" ||document.getElementById("caipirinha").style.borderColor == "green" ) && (document.getElementById("pudding").style.borderColor == "green" ||  document.getElementById("iceCream").style.borderColor == "green" ||document.getElementById("cake").style.borderColor == "green")){
         let message
-        message = "Olá, gostaria de pedir um combo: " + plate +", "+ drink +" e "+ dessert
+        message = "Olá, gostaria de pedir um combo: " + plate +", "+ drink +" e "+ dessert + " no valor de R$33,70"
         window.open("https://wa.me/+5511993296355?text=" + message)
     }else{
         alert("Por favor, selecione prato, bebida e sobremesa!")

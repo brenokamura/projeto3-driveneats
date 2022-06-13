@@ -7,7 +7,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:420px) {
 
 body {
 display: flex;
@@ -95,6 +95,7 @@ border: 5px solid white;
     height: 87px;
     
 }
+/*
 .produto{
     background: white;
     padding: 15px;
@@ -105,6 +106,7 @@ border: 5px solid white;
     cursor: pointer;
     border: 5px solid white;
 }
+*/
 h3{ 
 font-family: 'Roboto';
 font-style: normal;
