@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto #03 - DrivenEats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </div>
+    <div class="main">
+
+    <h1>Primeiro, seu prato</h1>
+    <div class="plate">
+        <div id="chicken" class="produto" onclick="chooseChicken()" required>
+                <img src="./Imagem/frango_yin_yang.png" alt="">
+                <h3>Frango Ying-Yang</h3>
+                <h4>Um pouco de batata, um pouco de salada.</h4>
+                <h5><strong>R$ 19,90</strong></h5>
+        </div>
+        <div id="beef" class="shadow"  onclick="chooseBeef()" required>
+            <div class="information">
+                <img class="food-image"src="./Imagem/beef.jpg" alt="">
+                <h3>Frango Ying-Yang</h3>
+                <h4>Um pouco de batata.</h4>
+                <h5><strong>R$ 19,90</strong></h5>
+            </div>
+        </div>
+        <div id="feijoada" class="shadow" onclick="chooseFeijoada()">
+            <div class="information">
+                <img class="food-image"src="./Imagem/feijoada.jpg" alt="">
+                <h3>Frango Yin Yang</h3>
+                <h4>Um pouco de vinagrete.</h4>
+                <h5><strong>R$ 19,90</strong></h5>
+            </div>
+        </div>
+    </div>
+    <h1>Agora, sua bebida</h1>
+    <div class="drink">
+        <div id="coca" class="produto" onclick="chooseCoca()" required>
+            <img src="./Imagem/coquinha_gelada.png" alt="">
+            <h3>Coquinha gelada</h3>
+            <h4>Lata 350 ml</h4>
+            <h5><strong>R$ 5,90</strong></h5>
+        </div>
+        <div id="juice" class="produto" onclick="chooseJuice()" required>
+            <div class="information">
+                <img class="food-image"src="./Imagem/juice.jpg" alt="">
+                <h3>Suco de laranja</h3>
+                <h4>Copo 350 ml</h4>
+                <h5><strong>R$ 5,90</strong></h5>
+            </div>
+        </div>
+        <div id="caipirinha" class="produto" onclick="chooseCaipirinha()" required>
+            <div class="information">
+                <img class="food-image"src="./Imagem/caipirinha.jpg" alt="">
+                <h3>Caipirinha</h3>
+                <h4>Caipirinha de Limão</h4>
+                <h5><strong>R$ 5,90</strong></h5>
+            </div>
+        </div>
+    </div>
+    <h1>Por fim, sua sobremesa</h1>
+    <div class="plate">
+        <div id="pudding" class="produto" onclick="choosePudding()" required>
+            <img src="./Imagem/pudim.png" alt="">
+            <h3>Pudim</h3>
+            <h4>Apenas pudim</h4>
+            <h5><strong>R$ 7,90</strong></h5>
+        </div>
+        <div id="iceCream" class="produto" onclick="chooseIceCream()" required>
+            <div class="information">
+                <img class="food-image"src="./Imagem/icecream.jpg" alt="">
+                <h3>Ice Cream</h3>
+                <h4>Apenas pudim</h4>
+                <h5><strong>R$ 7,90</strong></h5>
+            </div>
+        </div>
+        <div id="cake" class="produto" onclick="chooseCake()" required>
+            <div class="information">
+                <img class="food-image"src="./Imagem/icecream.jpg" alt="">
+                <h3>Cake</h3>
+                <h4>Apenas pudim</h4>
+                <h5><strong>R$ 7,90</strong></h5>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button id="finalize" onclick="finalizeOrder()">
+            <p class="footer-p">Selecione os 3 itens para fechar o pedido</p>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
